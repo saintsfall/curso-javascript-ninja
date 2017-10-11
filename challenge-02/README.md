@@ -4,30 +4,36 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(x,y){
+  return x+y;
+  }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var x = soma(1,2)+ 5;
 
 // Qual o valor atualizado dessa variável?
-?
+8
 
 // Declare uma nova variável, sem valor.
-?
+var w;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function add(){
+  w = 10;
+  return 'O valor da variavel agora é: '+w;
+  }
 
 // Invoque a função criada acima.
-?
+add();
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
-
+/* 
+add()
+'O valor da variavel agora é: 10'
 /*
 Crie uma função com as seguintes características:
 1. A função deve receber 3 argumentos;
@@ -35,19 +41,27 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function thx(x, y, z){
+  if(x == undefined || y == undefined || z == undefined){
+    return 'Preencha todos os valores corretamente!';
+    }else{
+    var i = x * y * z;
+    var j = i + 2;
+    return j;
+    }
+  }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+thx(1, 1);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//'Preencha todos os valores corretamente!'
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+thx(1, 2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+8
 
 /*
 Crie uma função com as seguintes características:
