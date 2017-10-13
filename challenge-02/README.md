@@ -72,8 +72,30 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function sw(x, y, z){
+if(x !== undefined && y !== undefined && z !== undefined){
+  var i = x + y;
+  var j = i / z;
+  return j;
+  }else if(x !== undefined && y !== undefined){
+    var i = x + y;
+    return i;
+   }else if(x !== undefined){
+     return x;
+    }else if(x == undefined && y == undefined && z == undefined){
+      return false;
+     }else{
+       return null;
+      }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+sw();
+false // resultado sem argumentos
+sw(1);
+1 // resultado com um argumento
+sw(2, 2);
+4 // resultado com dois argumentos
+sw(2, 4, 2);
+3 // resultado com três argumentos
 ```
